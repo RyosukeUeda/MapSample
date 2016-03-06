@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MKSMessageOverlayView">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pxd-Jx-Hym">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.70107491134751776" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="pxd-Jx-Hym" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1Yi-NO-dEA"/>
+                <constraint firstItem="pxd-Jx-Hym" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5yI-Sf-lKm"/>
+                <constraint firstAttribute="trailing" secondItem="pxd-Jx-Hym" secondAttribute="trailing" id="C8d-LW-KWc"/>
+                <constraint firstAttribute="bottom" secondItem="pxd-Jx-Hym" secondAttribute="bottom" id="bB6-08-caO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="messageView" destination="pxd-Jx-Hym" id="83P-EW-eZE"/>
+            </connections>
+            <point key="canvasLocation" x="319" y="360"/>
+        </view>
+    </objects>
+</document>
